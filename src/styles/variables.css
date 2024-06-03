@@ -1,0 +1,98 @@
+:root {
+  --roboto: "Roboto", Sans-serif;
+  --fira-sans: "Fira Sans";
+
+  /* Colors */
+  --base-white: #ffffff;
+  --base-black: #000000;
+  --base-yellow: #fbcf6d;
+  --base-cyan: #35d4dd;
+  --base-magenta: #d368c8;
+
+  --accent-lighter-yellow: #f9dc9a;
+  --accent-darker-yellow: #fdc33f;
+  --accent-darkest-yellow: #ffb612;
+  --accent-lighter-cyan: #77d8dd;
+  --accent-darker-cyan: #2db2ba;
+  --accent-darkest-cyan: #279ca3;
+  --accent-eerie-black: #1a1a1a;
+  --accent-offblack: #303030;
+  --accent-ash-gray: #4d4d4d;
+  --accent-squant: #666666;
+  --accent-uniform-grey: #a8a8a8;
+  --accent-quick-silver: #c4c4c4;
+  --accent-alto: #e0e0e0;
+  --accent-offwhite: #f9f9f9;
+
+  --system-warning-red: #ff0000;
+  --system-success-green: #229c20;
+  --system-caution-orange: #ff8c00;
+  --system-caution-yellow: #ffb61d;
+  --system-cloud-blue: #d5e0ed;
+  --system-link-blue: #1e90ff;
+  --system-navy-blue: #4d81ce;
+
+  /* Gradients */
+  --gradient-black: linear-gradient(
+    150deg,
+    #444756 18.34%,
+    var(--accent-eerie-black) 81.76%
+  );
+
+  /* Box Shadows */
+  --shadow-1: 0px 4px 12px 0px rgba(0, 0, 0, 0.07);
+  --shadow-side: 4px 0px 12px -2px rgba(0, 0, 0, 0.07);
+
+  /* Spacing */
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-s: 16px;
+  --spacing-m: 24px;
+  --spacing-l: 32px;
+  --spacing-xl: 40px;
+  --spacing-xxl: 48px;
+
+  /* Z-Index */
+  --z-index-1: 1;
+  --z-index-1000: 1000;
+  --z-index-google-places-autocomplete: var(--z-index-1000);
+
+  --z-index-2000: 2000;
+  --z-index-3000: 3000;
+  --z-index-4000: 4000;
+  --z-index-5000: 5000;
+
+  --z-index-6000: 6000;
+  --z-index-calendar: var(--z-index-6000);
+  --z-index-dropdown: var(--z-index-6000);
+
+  --z-index-7000: 7000;
+  --z-index-navbar: var(--z-index-7000);
+
+  --z-index-8000: 8000;
+  --z-index-modal: var(--z-index-8000);
+  --z-index-hotspot: var(--z-index-8000);
+
+  --z-index-9000: 9000;
+  --z-index-banner: var(--z-index-9000);
+
+  /* Heights */
+  --height-navbar-desktop: 72px;
+  --height-navbar-mobile: 56px;
+  --height-input: 48px;
+  --height-input-mobile: 40px;
+
+  /* Widths */
+  --width-navbar-menu-mobile: 235px;
+  --width-icon-small: 24px;
+  --width-icon-medium: 32px;
+  --width-icon-large: 40px;
+  --width-calendar: 262px;
+
+  /* Padding */
+  --top-padding-mobile-navbar-link: 12px;
+  --padding-side-input: var(--spacing-s);
+
+  /* Inter Component Spacing */
+  --spacing-icon-input: var(--spacing-xs);
+}

@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xxs) var(--spacing-s);
+  position: sticky;
+  top: var(--height-navbar-desktop);
+  box-shadow: var(--shadow-1);
+  z-index: calc(var(--z-index-navbar) - 1);
+}
+
+.neutral {
+  background: rgba(238, 247, 248);
+}
+
+.warning {
+  background: rgba(251, 236, 239);
+}

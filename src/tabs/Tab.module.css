@@ -1,0 +1,19 @@
+.root {
+  font-family: var(--fira-sans);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  white-space: nowrap;
+  cursor: pointer;
+  color: var(--accent-uniform-grey);
+  text-transform: uppercase;
+  padding-bottom: var(--spacing-xxs);
+  border-bottom: 2px solid transparent;
+  display: inline-flex;
+}
+
+.active {
+  color: var(--accent-darker-cyan);
+  border-bottom-color: var(--accent-darker-cyan);
+}

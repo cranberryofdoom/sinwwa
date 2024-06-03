@@ -1,0 +1,17 @@
+.navMenuItem a {
+  text-decoration: none;
+}
+
+.navMenuItem button {
+  width: 100%;
+}
+
+.navLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: flex-start;
+  gap: var(--spacing-xs);
+  text-decoration: none;
+  padding: 12px 0 12px var(--spacing-l);
+}

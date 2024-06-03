@@ -1,0 +1,11 @@
+.root {
+  position: relative;
+  width: 100%;
+}
+
+.clearIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: var(--padding-side-input);
+}

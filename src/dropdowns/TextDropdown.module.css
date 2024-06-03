@@ -1,0 +1,27 @@
+.selectTrigger {
+  all: unset;
+  padding: 12px 0;
+  max-height: var(--height-input);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: var(--roboto);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--accent-ash-gray);
+  gap: var(--spacing-xxs);
+  box-sizing: border-box;
+}
+
+.selectTrigger[data-state="open"] svg {
+  transform: rotate(180deg);
+}
+
+.selectTrigger[data-placeholder] {
+  color: var(--accent-uniform-grey);
+}
+
+.selectTrigger p {
+  font-weight: 700;
+}

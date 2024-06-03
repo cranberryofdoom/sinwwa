@@ -1,0 +1,124 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: var(--height-input);
+  margin-top: var(--spacing-xs);
+  z-index: var(--z-index-dropdown);
+  border-radius: 4px;
+  box-shadow: var(--shadow-1);
+  background-color: var(--base-white);
+  display: flex;
+  flex-direction: column;
+  width: var(--width-calendar);
+}
+
+.datePicker {
+  background-color: var(--accent-offwhite);
+}
+
+.datePicker :global(.rdrCalendarWrapper) {
+  gap: 12px;
+}
+
+.datePicker :global(.rdrMonthAndYearPickers) {
+  font-family: var(--fira-sans);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.datePicker :global(.rdrNextPrevButton) {
+  width: var(--spacing-l);
+  height: var(--spacing-l);
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-alto);
+  background-color: var(--base-white);
+}
+
+.datePicker :global(.rdrNextPrevButton:hover) {
+  background-color: var(--accent-alto);
+}
+
+.datePicker :global(.rdrNextPrevButton i) {
+  color: var(--accent-squant);
+}
+
+.datePicker :global(.rdrNextButton i) {
+  margin: auto;
+}
+
+.datePicker :global(.rdrMonthName),
+.datePicker :global(.rdrDayToday .rdrDayNumber span:after) {
+  display: none;
+}
+
+.datePicker :global(.rdrDayPassive .rdrDayNumber span) {
+  color: transparent;
+}
+
+.datePicker :global(.rdrCalendarWrapper) {
+  background-color: transparent;
+}
+
+.datePicker :global(.rdrMonth) {
+  width: var(--width-calendar);
+  padding: 12px;
+}
+
+.datePicker :global(.rdrWeekDay) {
+  font-family: var(--roboto);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--accent-uniform-grey);
+  height: 20px;
+}
+
+.datePicker :global(.rdrDay) {
+  height: 34px;
+}
+
+.datePicker :global(.rdrDay),
+.datePicker :global(.rdrWeekDay) {
+  align-items: center;
+}
+
+.datePicker :global(.rdrDayNumber) {
+  font-family: var(--roboto);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--accent-ash-gray);
+}
+
+.datePicker :global(.rdrSelected) {
+  height: 30px;
+  top: 2px;
+  border-radius: 50%;
+}
+
+.datePicker :global(.rdrDayStartPreview),
+.datePicker :global(.rdrDayEndPreview) {
+  height: 34px;
+  top: 0;
+}
+
+.datePicker :global(.rdrDayEndPreview) {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.datePicker :global(.rdrDayStartPreview) {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.datePicker :global(.rdrDays .rdrDayHovered .rdrDayNumber:after) {
+  border-radius: 50%;
+  border-color: var(--accent-darker-cyan);
+  height: 34px;
+  top: -5px;
+}

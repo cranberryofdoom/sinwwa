@@ -1,0 +1,30 @@
+.root {
+  position: relative;
+  width: 100%;
+}
+
+.expandIcon,
+.clearIcon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.clearIcon {
+  right: calc(
+    var(--padding-side-input) + var(--width-icon-small) +
+      var(--spacing-icon-input)
+  );
+}
+
+.expandIcon {
+  right: var(--padding-side-input);
+}
+
+.root input {
+  padding-left: var(--padding-side-input);
+  padding-right: calc(
+    var(--padding-side-input) +
+      ((var(--width-icon-small) + var(--spacing-icon-input)) * 2)
+  );
+}

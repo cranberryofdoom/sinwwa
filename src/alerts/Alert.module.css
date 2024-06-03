@@ -1,0 +1,24 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-s);
+  border-radius: 6px;
+  border-width: 1px;
+  border-style: solid;
+  border-left-width: 4px;
+  padding: var(--spacing-s);
+  background-color: var(--base-white);
+}
+
+.root.success {
+  border-color: var(--system-success-green);
+}
+
+.root.warning {
+  border-color: var(--system-caution-orange);
+}
+
+.root.error {
+  border-color: var(--system-warning-red);
+}

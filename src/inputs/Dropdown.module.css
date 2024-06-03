@@ -1,0 +1,88 @@
+.root {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.selectTrigger {
+  all: unset;
+  padding: 12px var(--spacing-s);
+  border: 1px solid var(--accent-alto);
+  border-radius: 6px;
+  max-height: var(--height-input);
+  background-color: var(--base-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--accent-ash-gray);
+  gap: var(--spacing-xs);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.selectTrigger span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selectTrigger p {
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+.selectTrigger[data-placeholder] {
+  color: var(--accent-uniform-grey);
+}
+
+.selectTrigger:hover {
+  border-color: var(--accent-quick-silver);
+}
+
+.selectTrigger:focus {
+  border-color: var(--accent-darker-cyan);
+}
+
+.portalContainer {
+  position: absolute;
+  z-index: var(--z-index-dropdown);
+}
+
+.selectSeparator {
+  height: 1px;
+  width: 100%;
+  background: var(--accent-alto);
+}
+
+.clear {
+  position: absolute;
+  right: calc(
+    var(--padding-side-input) + var(--width-icon-small) +
+      var(--spacing-icon-input)
+  );
+  top: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .selectTrigger {
+    padding: var(--spacing-xs) 12px;
+    max-height: var(--height-input-mobile);
+    min-height: var(--height-input-mobile);
+  }
+
+  .selectTrigger,
+  .selectTrigger[data-placeholder],
+  .selectTrigger p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

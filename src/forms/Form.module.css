@@ -1,0 +1,36 @@
+.formRoot {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-m);
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.headingAndControl {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-s);
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.row > * {
+  flex: 1;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .formRoot {
+    gap: var(--spacing-s);
+  }
+}

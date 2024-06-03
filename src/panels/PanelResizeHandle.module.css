@@ -1,0 +1,27 @@
+.root {
+  width: var(--spacing-xxs);
+  background-color: var(--accent-quick-silver);
+  position: relative;
+}
+
+.root::after {
+  content: "...";
+  display: flex;
+  height: 12px;
+  width: var(--spacing-s);
+  background-color: var(--base-white);
+  border: 1px solid var(--accent-quick-silver);
+  color: var(--accent-ash-gray);
+  border-radius: 2px;
+  cursor: col-resize;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  line-height: 6px;
+  text-align: center;
+  transform: rotate(90deg);
+  line-height: 1px;
+  padding: 0 4.5px;
+  left: -10px;
+}

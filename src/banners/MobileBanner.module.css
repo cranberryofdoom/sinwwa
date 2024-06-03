@@ -1,0 +1,60 @@
+.root {
+  width: 100vw;
+  /* https://web.dev/blog/viewport-units */
+  width: 100svw;
+  height: 100vh;
+  /* https://web.dev/blog/viewport-units */
+  height: 100svh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var(--z-index-banner);
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  background-color: var(--base-white);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px var(--spacing-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-s);
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.secondaryCTA {
+  padding: 10px 0;
+}
+
+.secondaryCTA p {
+  text-align: center;
+}

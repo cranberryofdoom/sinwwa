@@ -1,0 +1,18 @@
+.root {
+  border-radius: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 12px var(--spacing-s);
+  gap: var(--spacing-xs);
+  box-shadow: var(--shadow-1);
+}
+
+.neutral {
+  background: rgba(238, 247, 248);
+}
+
+.warning {
+  background: rgba(251, 236, 239);
+}

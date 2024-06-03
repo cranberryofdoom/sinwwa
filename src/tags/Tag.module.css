@@ -1,0 +1,18 @@
+.root {
+  display: inline-flex;
+  font-family: var(--roboto);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: var(--spacing-xxs) var(--spacing-s);
+  border-radius: 71px;
+  text-wrap: nowrap;
+}
+
+.light {
+  color: var(--base-white);
+}
+
+.dark {
+  color: var(--accent-ash-gray);
+}

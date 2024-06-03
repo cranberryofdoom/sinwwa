@@ -1,0 +1,124 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-SemiBold.ttf);
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  cursor: pointer;
+
+  background: transparent;
+
+  color: inherit;
+  font: inherit;
+
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+button:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol,
+li {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.pac-container {
+  z-index: var(--z-index-google-places-autocomplete);
+}
+
+.ReactModal__Body--open {
+  /* Styling for the google places autocomplete when it shows up in a modal */
+  .pac-container {
+    z-index: calc(var(--z-index-modal) + 1);
+  }
+}
+
+*::-webkit-scrollbar {
+  width: var(--spacing-xxs);
+  height: var(--spacing-xxs);
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--accent-uniform-grey);
+  border-radius: 4px;
+}

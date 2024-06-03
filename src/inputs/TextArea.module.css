@@ -1,0 +1,64 @@
+.root {
+  position: relative;
+}
+
+.textarea {
+  outline: none;
+  padding: 12px var(--padding-side-input);
+  border: 1px solid var(--accent-alto);
+  border-radius: 6px;
+  max-height: calc(var(--height-input) * 2);
+  min-height: calc(var(--height-input) * 2);
+  color: var(--accent-ash-gray);
+  background-color: var(--base-white);
+  width: 100%;
+}
+
+.textarea,
+.textarea::placeholder {
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.textarea::placeholder {
+  color: var(--accent-uniform-grey);
+}
+
+.textarea::placeholder {
+  color: var(--accent-uniform-grey);
+}
+
+.textarea:disabled {
+  opacity: 0.5;
+  color: var(--accent-ash-gray);
+  border-color: var(--accent-alto);
+  cursor: not-allowed;
+}
+
+.textarea:hover:not(:disabled) {
+  border-color: var(--accent-quick-silver);
+}
+
+.textarea:focus {
+  border-color: var(--accent-darker-cyan);
+}
+
+.textarea::selection {
+  background-color: var(--accent-alto);
+}
+
+@media (max-width: 768px) {
+  .textarea {
+    padding: var(--spacing-xs) 12px;
+    max-height: calc(var(--height-input-mobile) * 2);
+    min-height: calc(var(--height-input-mobile) * 2);
+  }
+
+  .textarea,
+  .textarea::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

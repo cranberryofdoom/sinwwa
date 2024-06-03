@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdf {
+  display: flex;
+  background-color: var(--accent-ash-gray);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+.document {
+  display: flex;
+  margin: auto;
+}
+
+.pageButton,
+.pageButton:disabled,
+.toolbar {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.root:hover .pageButton,
+.root:hover .toolbar {
+  opacity: 1;
+}
+
+.root:hover .pageButton:disabled {
+  opacity: 0.5;
+}
+
+.pageButton {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.pageButton div {
+  box-shadow: var(--shadow-1);
+}
+
+.pageButton.previous {
+  left: var(--spacing-m);
+}
+
+.pageButton.next {
+  right: var(--spacing-m);
+}
+
+.toolbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  padding: var(--spacing-xxs) var(--spacing-s);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--accent-eerie-black);
+}

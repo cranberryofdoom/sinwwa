@@ -1,0 +1,12 @@
+.navMenuItem a {
+  text-decoration: none;
+}
+
+.navLink {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-xxs);
+  text-decoration: none;
+}

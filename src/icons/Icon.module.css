@@ -1,0 +1,135 @@
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.small {
+  width: var(--width-icon-small);
+  height: var(--width-icon-small);
+  padding: 2px;
+}
+
+.medium {
+  width: var(--width-icon-medium);
+  height: var(--width-icon-medium);
+  padding: 2px;
+}
+
+.large {
+  width: var(--width-icon-large);
+  height: var(--width-icon-large);
+  padding: 3px;
+}
+
+.black svg {
+  fill: var(--accent-offblack);
+}
+
+.black:active svg {
+  fill: var(--accent-eerie-blackA);
+}
+
+.white svg {
+  fill: var(--base-white);
+}
+
+.white:active svg {
+  fill: var(--accent-alto);
+}
+
+.gray svg {
+  fill: var(--accent-uniform-grey);
+}
+
+.gray:active svg {
+  fill: var(--accent-squant);
+}
+
+.yellow svg {
+  fill: var(--accent-darker-yellow);
+}
+
+.yellow:active svg {
+  fill: var(--accent-darkest-yellow);
+}
+
+.cyan svg {
+  fill: var(--accent-darker-cyan);
+}
+
+.cyan:active svg {
+  fill: var(--accent-darkest-cyan);
+}
+
+.blue svg {
+  fill: var(--system-link-blue);
+}
+
+.blue:active svg {
+  fill: var(--system-navy-blue);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.circle.small {
+  padding: 4px;
+}
+
+.circle.medium,
+.circle.large {
+  padding: 5px;
+}
+
+.circle.black,
+.circle.gray {
+  background-color: var(--base-white);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--accent-alto);
+}
+
+.circle.black:active,
+.circle.gray:active {
+  background-color: var(--accent-offwhite);
+}
+
+.circle.white {
+  background-color: var(--accent-squant);
+}
+
+.circle.white:active {
+  background-color: var(--accent-ash-gray);
+}
+
+.circle.cyan {
+  background-color: #cfedef;
+}
+
+.circle.cyan:active {
+  background-color: #c2dfe0;
+}
+
+.circle.yellow {
+  background-color: #f4cad4;
+}
+
+.circle.yellow:active {
+  background-color: #ebc8d1;
+}
+
+.circle.blue {
+  background-color: #d1ddef;
+}
+
+.circle.blue:active {
+  background-color: #c9d4e5;
+}

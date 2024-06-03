@@ -1,0 +1,153 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: var(--spacing-m);
+  margin-top: var(--spacing-xs);
+  z-index: var(--z-index-dropdown);
+  border-radius: 4px;
+  box-shadow: var(--shadow-1);
+  background-color: var(--base-white);
+  display: flex;
+  flex-direction: column;
+  width: var(--width-calendar);
+}
+
+.dateRangePicker {
+  background-color: var(--accent-offwhite);
+}
+
+.dateRangePicker :global(.rdrCalendarWrapper) {
+  gap: 12px;
+}
+
+.dateRangePicker :global(.rdrMonthAndYearPickers) {
+  font-family: var(--fira-sans);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dateRangePicker :global(.rdrNextPrevButton) {
+  width: var(--spacing-l);
+  height: var(--spacing-l);
+  padding: 5px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-alto);
+  background-color: var(--base-white);
+}
+
+.dateRangePicker :global(.rdrNextPrevButton:hover) {
+  background-color: var(--accent-alto);
+}
+
+.dateRangePicker :global(.rdrNextPrevButton i) {
+  color: var(--accent-squant);
+}
+
+.dateRangePicker :global(.rdrNextButton i) {
+  margin: auto;
+}
+
+.dateRangePicker :global(.rdrDefinedRangesWrapper),
+.dateRangePicker :global(.rdrMonthName),
+.dateRangePicker :global(.rdrDayToday .rdrDayNumber span:after) {
+  display: none;
+}
+
+.dateRangePicker :global(.rdrDayPassive .rdrDayNumber span) {
+  color: transparent;
+}
+
+.dateRangePicker :global(.rdrCalendarWrapper) {
+  background-color: transparent;
+}
+
+.dateRangePicker :global(.rdrMonth) {
+  width: var(--width-calendar);
+  padding: 12px;
+}
+
+.dateRangePicker :global(.rdrWeekDay) {
+  font-family: var(--roboto);
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--accent-uniform-grey);
+  height: 20px;
+}
+
+.dateRangePicker :global(.rdrDay) {
+  height: 34px;
+}
+
+.dateRangePicker :global(.rdrDay),
+.dateRangePicker :global(.rdrWeekDay) {
+  align-items: center;
+}
+
+.dateRangePicker :global(.rdrDayNumber) {
+  font-family: var(--roboto);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--accent-ash-gray);
+}
+
+.dateRangePicker :global(.rdrStartEdge),
+.dateRangePicker :global(.rdrEndEdge),
+.dateRangePicker :global(.rdrInRange) {
+  height: 30px;
+  top: 2px;
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  background-color: #2db2bab3;
+}
+
+.dateRangePicker :global(.rdrStartEdge),
+.dateRangePicker :global(.rdrEndEdge) {
+  width: 32px;
+}
+
+.dateRangePicker :global(.rdrStartEdge) {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  left: 2px;
+}
+
+.dateRangePicker :global(.rdrEndEdge) {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  right: 2px;
+}
+
+.dateRangePicker :global(.rdrStartEdge::after),
+.dateRangePicker :global(.rdrEndEdge::after) {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent-darker-cyan);
+  border-radius: 50%;
+  width: 30px;
+}
+
+.dateRangePicker :global(.rdrEndEdge::after) {
+  left: 2px;
+}
+
+.dateRangePicker :global(.rdrInRange) {
+  width: 34px;
+}
+
+.dateRangePicker :global(.rdrStartEdge.rdrEndEdge) {
+  background: transparent;
+}
+
+.dateRangePicker :global(.rdrStartEdge.rdrEndEdge::after) {
+  left: 0;
+}

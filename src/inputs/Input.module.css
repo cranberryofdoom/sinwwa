@@ -1,0 +1,99 @@
+.root {
+  position: relative;
+}
+
+.leftIcon,
+.rightIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.leftIcon {
+  left: var(--padding-side-input);
+}
+
+.rightIcon {
+  right: var(--padding-side-input);
+}
+
+.input {
+  outline: none;
+  padding: 12px var(--padding-side-input);
+  border: 1px solid var(--accent-alto);
+  border-radius: 6px;
+  max-height: var(--height-input);
+  min-height: var(--height-input);
+  color: var(--accent-ash-gray);
+  background-color: var(--base-white);
+  width: 100%;
+}
+
+.input.withLeftIcon {
+  padding-left: calc(
+    var(--padding-side-input) + var(--width-icon-small) +
+      var(--spacing-icon-input)
+  );
+}
+
+.input.withRightIcon {
+  padding-right: calc(
+    var(--padding-side-input) + var(--width-icon-small) +
+      var(--spacing-icon-input)
+  );
+}
+
+.input,
+.input::placeholder {
+  font-family: var(--roboto);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.input::placeholder {
+  color: var(--accent-uniform-grey);
+}
+
+.input:disabled {
+  opacity: 0.5;
+  color: var(--accent-ash-gray);
+  border-color: var(--accent-alto);
+  cursor: not-allowed;
+}
+
+.input:hover:not(:disabled) {
+  border-color: var(--accent-quick-silver);
+}
+
+.input:focus {
+  border-color: var(--accent-darker-cyan);
+}
+
+.input::selection {
+  background-color: var(--accent-alto);
+}
+
+.input[type="date"]::-webkit-calendar-picker-indicator {
+  align-self: center;
+  color: var(--accent-squant);
+}
+
+/* We can't alter the color of the "x" icon. */
+.input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .input {
+    padding: var(--spacing-xs) 12px;
+    max-height: var(--height-input-mobile);
+    min-height: var(--height-input-mobile);
+  }
+
+  .input,
+  .input::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

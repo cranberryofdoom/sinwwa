@@ -1,0 +1,7 @@
+.logo {
+  height: 40px;
+}
+
+.logo.mobile {
+  height: 32px;
+}

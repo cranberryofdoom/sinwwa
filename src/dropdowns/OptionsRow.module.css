@@ -1,0 +1,21 @@
+.selectItem,
+.dropdownItem {
+  outline: none;
+  padding: var(--spacing-xs) 12px;
+  cursor: pointer;
+}
+
+.selectItem[data-state="checked"] p {
+  font-weight: 700;
+}
+
+.selectItem[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

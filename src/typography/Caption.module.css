@@ -1,0 +1,19 @@
+.caption {
+  font-family: var(--roboto);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fixedWidth {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

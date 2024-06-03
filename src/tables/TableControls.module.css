@@ -1,0 +1,38 @@
+.root {
+  background-color: var(--base-white);
+  padding: var(--spacing-s) var(--spacing-m);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 6px;
+  overflow-x: auto;
+  gap: var(--spacing-l);
+  flex-shrink: 0;
+}
+
+.contents {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-l);
+  flex-shrink: 0;
+  overflow-x: auto;
+  flex-grow: 1;
+}
+
+.left {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  gap: var(--spacing-m);
+}
+
+.expandable svg {
+  transform: rotate(180deg);
+}
+
+.expandable.expanded svg {
+  transform: rotate(0deg);
+}

@@ -1,0 +1,5 @@
+.navBarLine {
+  width: 1px;
+  height: var(--spacing-m);
+  background-color: var(--accent-alto);
+}

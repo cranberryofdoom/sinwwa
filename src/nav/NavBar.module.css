@@ -1,0 +1,92 @@
+.navMenuRoot {
+  display: flex;
+  position: sticky;
+  padding: var(--spacing-s) var(--spacing-l);
+  background-color: var(--base-white);
+  box-shadow: 0px 0px 8px 0px rgba(48, 48, 48, 0.05);
+  width: 100vw;
+  top: 0;
+  height: var(--height-navbar-desktop);
+  z-index: var(--z-index-navbar);
+}
+
+.navMenuRoot > :first-child {
+  width: 100%;
+  display: flex;
+}
+
+.navMenuRoot.mobile {
+  padding: 12px var(--spacing-s);
+  height: var(--height-navbar-mobile);
+}
+
+.navMenuList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: var(--spacing-m);
+}
+
+.navBarLeftContent,
+.navBarRightContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+.navMenuRoot.mobile .navBarLeftContent,
+.navMenuRoot.mobile .navBarRightContent {
+  gap: var(--spacing-s);
+}
+
+.navBarLeftContent > li > button,
+.navBarRightContent > li > button,
+.navBarRightContent > div > li > button {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navMenuViewport {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  right: 0px;
+  left: 0px;
+}
+
+.navMenuViewport[data-state="open"] {
+  animation: enterFromRight 200ms ease;
+}
+
+.navMenuViewport[data-state="closed"] {
+  animation: exitToRight 200ms ease;
+}
+
+@keyframes enterFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(var(--width-navbar-menu-mobile));
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes exitToRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(var(--width-navbar-menu-mobile));
+  }
+}

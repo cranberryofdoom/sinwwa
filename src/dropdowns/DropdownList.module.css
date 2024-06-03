@@ -1,0 +1,21 @@
+.selectContent,
+.dropdownList {
+  background: var(--base-white);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  border: 1px solid var(--accent-offwhite);
+}
+
+.selectContent {
+  width: var(--radix-select-trigger-width);
+  overflow: hidden;
+  min-width: max-content;
+}
+
+.dropdownList {
+  position: absolute;
+  overflow-y: auto;
+  width: 100%;
+  max-height: 200px;
+  z-index: var(--z-index-dropdown);
+}

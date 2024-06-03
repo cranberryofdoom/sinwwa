@@ -1,0 +1,90 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: var(--spacing-m);
+  margin-top: var(--spacing-xs);
+  z-index: var(--z-index-dropdown);
+  border-radius: 4px;
+  box-shadow: var(--shadow-1);
+  background-color: var(--base-white);
+  display: flex;
+  flex-direction: column;
+  width: var(--width-checklist-dropdown);
+  overflow: hidden;
+  gap: 12px;
+  padding: var(--spacing-xs) 0;
+}
+
+.search {
+  padding: var(--spacing-xs) var(--spacing-s) 0 var(--spacing-s);
+}
+
+.selectAllAndClearSelection {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--base-white);
+  z-index: var(--z-index-1);
+}
+
+.selectAllAndClearSelection.noSelectAll {
+  padding-left: var(--spacing-s);
+  padding-bottom: var(--spacing-xs);
+}
+
+.selectAll {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.itemWrapper,
+.selectAllAndClearSelection {
+  padding-left: var(--spacing-xxs);
+  padding-right: 12px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.itemWrapper {
+  flex-shrink: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkboxWrapper {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.children {
+  padding-left: 12px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
