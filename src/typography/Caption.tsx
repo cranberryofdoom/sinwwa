@@ -1,5 +1,5 @@
 import styles from "./Caption.module.css";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import classNames from "classnames";
 
 type CaptionProps = {

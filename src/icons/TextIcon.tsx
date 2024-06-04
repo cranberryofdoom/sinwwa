@@ -1,7 +1,7 @@
 import styles from "./Icon.module.css";
 import classNames from "classnames";
 import * as Icons from "./assets";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import { IconName } from "./Icon";
 
 type TextIconProps = {

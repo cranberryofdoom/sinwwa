@@ -3,6 +3,7 @@ import "normalize.css";
 import "../src/styles/variables.css";
 import "../src/styles/font.css";
 import "../src/styles/base.css";
+import "../src/styles/spacing.css";
 
 const preview: Preview = {
   parameters: {

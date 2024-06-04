@@ -2,7 +2,7 @@ import styles from "./MobileBanner.module.css";
 import { Icon, IconColors, IconName } from "../icons";
 import { Caption, H3 } from "../typography";
 import { Button } from "../buttons";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 
 const getHeaderColor = (color: IconColors): keyof typeof colors => {
   switch (color) {

@@ -1,4 +1,4 @@
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import styles from "./H5.module.css";
 
 type H5Props = {

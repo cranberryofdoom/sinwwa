@@ -1,3 +1,7 @@
+/**
+ * This needs to be kept in sync with colors.css. Unideal, but I like being able to
+ * pass color token names as props and have them be autocompleted and type-safe in Typescript.
+ */
 export const colors = {
   "base-white": "#ffffff",
   "base-black": "#000000",

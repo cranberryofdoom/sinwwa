@@ -1,6 +1,6 @@
-import { useHandleScrollInfiniteScroll } from "../hooks";
-import { spacing } from "../tokens";
 import styles from "./DropdownList.module.css";
+import classNames from "classnames";
+import { useHandleScrollInfiniteScroll } from "../hooks";
 import * as Select from "@radix-ui/react-select";
 
 /**
@@ -33,7 +33,7 @@ export type DropdownListProps = {
 export const DropdownList = ({
   children,
   width,
-  alignment,
+  alignment = "bottom-left",
   isLoading,
   onLoadMore,
 }: DropdownListProps) => {
@@ -48,14 +48,12 @@ export const DropdownList = ({
     <div
       style={{
         width: `${width}px`,
-        bottom: verticalAlignment === "top" ? `100%` : undefined,
-        marginBottom:
-          verticalAlignment === "top" ? `${spacing.xs}px` : undefined,
-        marginTop:
-          verticalAlignment === "bottom" ? `${spacing.xs}px` : undefined,
-        right: horizontalAlignment === "right" ? 0 : undefined,
       }}
-      className={styles.dropdownList}
+      className={classNames(styles.dropdownList, {
+        [styles.top]: verticalAlignment === "top",
+        [styles.bottom]: verticalAlignment === "bottom",
+        [styles.right]: horizontalAlignment === "right",
+      })}
       ref={scrollingElement}
       onScroll={onLoadMore ? handleScroll : undefined}
     >

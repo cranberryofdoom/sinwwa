@@ -4,7 +4,6 @@ import styles from "./Pdf.module.css";
 import { Document, Page, pdfjs } from "react-pdf";
 import classNames from "classnames";
 import { Loading } from "../loaders";
-import { spacing } from "../tokens";
 
 export const getLocalStoragePdfSettings = () => {
   return localStorage.getItem("pdfSettings");
@@ -78,7 +77,7 @@ export const Pdf = ({ url }: { url: string }) => {
 
   useEffect(() => {
     if (pdfWrapper.current) {
-      setPdfHeight(pdfWrapper.current.offsetHeight - spacing.xxs);
+      setPdfHeight(pdfWrapper.current.offsetHeight);
     }
   }, []);
 

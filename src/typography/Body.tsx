@@ -1,5 +1,5 @@
 import styles from "./Body.module.css";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import classNames from "classnames";
 
 type BodyProps = {

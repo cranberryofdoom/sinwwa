@@ -1,5 +1,5 @@
 import { IconName, TextIcon } from "../icons";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import styles from "./NavLinkRightIcon.module.css";
 
 type NavLinkRightIconProps = {

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import styles from "./Tag.module.css";
 
 export const Tag = ({

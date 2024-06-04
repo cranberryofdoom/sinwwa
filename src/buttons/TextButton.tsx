@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { IconColors, IconName, TextIcon } from "../icons";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import styles from "./TextButton.module.css";
 import { Loading } from "../loaders";
 

@@ -1,4 +1,4 @@
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import styles from "./H3.module.css";
 
 type H3Props = {

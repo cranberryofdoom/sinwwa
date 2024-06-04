@@ -2,7 +2,7 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import styles from "./DateDropdown.module.css";
 import { DateRangePicker, Range } from "react-date-range";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 import { useEffect, useRef, useState } from "react";
 import { useClickOutside } from "../hooks";
 import { DropdownToggle } from "./DropdownToggle";

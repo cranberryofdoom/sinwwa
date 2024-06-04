@@ -6,7 +6,7 @@ import { Input } from "./Input";
 import { useClickOutside } from "../hooks";
 import { Calendar } from "react-date-range";
 import { format, isValid, parse } from "date-fns";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 
 export type DateInputProps = Omit<
   React.InputHTMLAttributes<HTMLInputElement>,

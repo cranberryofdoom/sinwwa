@@ -4,7 +4,7 @@ import { Icon, IconColors } from "../icons";
 import { RadixDropdownList } from "./DropdownList";
 import { RadixOptionsRow } from "./OptionsRow";
 import { RadixDropdownSeparator } from "./DropdownSeparator";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 
 export const TextDropdown = {
   /**

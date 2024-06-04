@@ -2,7 +2,7 @@ import styles from "./Alert.module.css";
 import classNames from "classnames";
 import { IconName, TextIcon } from "../icons";
 import { Body } from "../typography";
-import { colors } from "../tokens";
+import { colors } from "../styles";
 
 type AlertVariant = "success" | "error" | "warning";
 

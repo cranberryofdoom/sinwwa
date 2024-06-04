@@ -19,3 +19,16 @@
   max-height: 200px;
   z-index: var(--z-index-dropdown);
 }
+
+.dropdownList.top {
+  bottom: 100%;
+  margin-bottom: var(--spacing-xs);
+}
+
+.dropdownList.bottom {
+  margin-top: var(--spacing-xs);
+}
+
+.dropdownList.right {
+  right: 0;
+}
