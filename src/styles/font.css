@@ -1,0 +1,24 @@
+/* Custom fonts go here. */
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url(../fonts/FiraSans/FiraSans-SemiBold.ttf);
+  font-weight: 700;
+}
