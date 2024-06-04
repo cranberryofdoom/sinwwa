@@ -1,24 +1,35 @@
 .root {
+  --alert-background-color: var(--base-white);
+  --alert-padding: var(--spacing-s);
+  --alert-border-width: 1px;
+  --alert-border-left-width: 4px;
+  --alert-border-radius: 6px;
+  /* The gap between the icon and the text. */
+  --alert-gap: var(--spacing-s);
+  --alert-border-color-success: var(--system-success-green);
+  --alert-border-color-warning: var(--system-caution-orange);
+  --alert-border-color-error: var(--system-warning-red);
+
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: var(--spacing-s);
-  border-radius: 6px;
-  border-width: 1px;
+  gap: var(--alert-gap);
+  border-radius: var(--alert-border-radius);
+  border-width: var(--alert-border-width);
   border-style: solid;
-  border-left-width: 4px;
-  padding: var(--spacing-s);
-  background-color: var(--base-white);
+  border-left-width: var(--alert-border-left-width);
+  padding: var(--alert-padding);
+  background-color: var(--alert-background-color);
 }
 
 .root.success {
-  border-color: var(--system-success-green);
+  border-color: var(--alert-border-color-success);
 }
 
 .root.warning {
-  border-color: var(--system-caution-orange);
+  border-color: var(--alert-border-color-warning);
 }
 
 .root.error {
-  border-color: var(--system-warning-red);
+  border-color: var(--alert-border-color-error);
 }
