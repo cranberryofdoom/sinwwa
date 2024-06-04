@@ -22,3 +22,8 @@
   src: url(../fonts/FiraSans/FiraSans-SemiBold.ttf);
   font-weight: 700;
 }
+
+:root {
+  --roboto: "Roboto", Sans-serif;
+  --fira-sans: "Fira Sans";
+}
