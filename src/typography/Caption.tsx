@@ -1,21 +1,12 @@
 import styles from "./Caption.module.css";
 import { colors } from "../styles";
 import classNames from "classnames";
+import { BaseTypographyProps } from "./types";
 
-type CaptionProps = {
+type CaptionProps = BaseTypographyProps & {
   as?: "p" | "span";
-  children: React.ReactNode | string;
-  color: keyof typeof colors;
   weight?: "normal" | "bold";
-  className?: string;
-  /**
-   * Data attribute for cypress testing.
-   */
-  dataCy?: string;
-  textAlign?: React.CSSProperties["textAlign"];
   width?: React.CSSProperties["width"];
-  textWrap?: React.CSSProperties["textWrap"];
-  textTransform?: React.CSSProperties["textTransform"];
 };
 
 export const Caption = ({
@@ -24,7 +15,6 @@ export const Caption = ({
   color,
   weight = "normal",
   className,
-  dataCy,
   textAlign = "left",
   width,
   textWrap,
@@ -33,7 +23,6 @@ export const Caption = ({
   const HTMLElement = as === "p" ? "p" : "span";
   return (
     <HTMLElement
-      data-cy={dataCy}
       style={{
         color: colors[color],
         textAlign,

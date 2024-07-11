@@ -1,19 +1,11 @@
 import styles from "./Body.module.css";
 import { colors } from "../styles";
 import classNames from "classnames";
+import { BaseTypographyProps } from "./types";
 
-type BodyProps = {
+type BodyProps = BaseTypographyProps & {
   as?: "p" | "span";
-  children: React.ReactNode | string;
-  color?: keyof typeof colors;
   weight?: "normal" | "bold";
-  className?: string;
-  /**
-   * Data attribute for cypress testing.
-   */
-  dataCy?: string;
-  textAlign?: React.CSSProperties["textAlign"];
-  textTransform?: React.CSSProperties["textTransform"];
 };
 
 export const Body = ({
@@ -22,7 +14,6 @@ export const Body = ({
   color = "base-black",
   weight = "normal",
   className,
-  dataCy,
   textAlign = "left",
   textTransform = "initial",
 }: BodyProps) => {
@@ -35,7 +26,6 @@ export const Body = ({
         textTransform,
       }}
       className={classNames(styles.body, styles[weight], className)}
-      data-cy={dataCy}
     >
       {children}
     </HTMLElement>

@@ -1,19 +1,12 @@
 import { colors } from "../styles";
 import styles from "./H2.module.css";
+import { BaseTypographyProps } from "./types";
 
-type H2Props = {
-  children: string | React.ReactNode;
-  color: keyof typeof colors;
-  textTransform?: "uppercase" | "lowercase" | "capitalize";
-  /**
-   * Data attribute for cypress testing.
-   */
-  dataCy?: string;
-};
-export const H2 = ({ children, color, dataCy, textTransform }: H2Props) => {
+type H2Props = BaseTypographyProps;
+
+export const H2 = ({ children, color, textTransform }: H2Props) => {
   return (
     <h2
-      data-cy={dataCy}
       style={{
         textTransform,
         color: colors[color],

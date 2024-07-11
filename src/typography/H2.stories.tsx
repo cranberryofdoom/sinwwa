@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { H2 } from "./H2";
+import { argTypes } from "./meta";
 
 const meta: Meta<typeof H2> = {
+  ...argTypes,
   title: "Typography/H2",
   component: H2,
   tags: ["autodocs"],
@@ -10,15 +11,8 @@ const meta: Meta<typeof H2> = {
 
 export default meta;
 
-export const Default: StoryObj<typeof H2> = {
+export const Example: StoryObj<typeof H2> = {
   args: {
     children: "Heading 2",
-  },
-};
-
-export const Uppercase: StoryObj<typeof H2> = {
-  args: {
-    ...Default.args,
-    textTransform: "uppercase",
   },
 };

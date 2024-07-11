@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
-
 import { Caption } from "./Caption";
+import { argTypes } from "./meta";
 
 const meta: Meta<typeof Caption> = {
+  ...argTypes,
   title: "Typography/Caption",
   component: Caption,
   tags: ["autodocs"],
@@ -10,16 +11,9 @@ const meta: Meta<typeof Caption> = {
 
 export default meta;
 
-export const Default: StoryObj<typeof Caption> = {
+export const Example: StoryObj<typeof Caption> = {
   args: {
     color: "accent-ash-gray",
     children: "The quick brown fox jumped over the lazy dog.",
-  },
-};
-
-export const Bold: StoryObj<typeof Caption> = {
-  args: {
-    ...Default.args,
-    weight: "bold",
   },
 };

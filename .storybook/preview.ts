@@ -11,6 +11,7 @@ const preview: Preview = {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+        textTransform: /textTransform$/i,
       },
     },
   },

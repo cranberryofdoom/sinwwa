@@ -1,19 +1,12 @@
 import { colors } from "../styles";
 import styles from "./H3.module.css";
+import { BaseTypographyProps } from "./types";
 
-type H3Props = {
-  children: string | React.ReactNode;
-  color: keyof typeof colors;
-  textTransform?: "uppercase" | "lowercase" | "capitalize";
-  /**
-   * Data attribute for cypress testing.
-   */
-  dataCy?: string;
-};
-export const H3 = ({ children, color, dataCy, textTransform }: H3Props) => {
+type H3Props = BaseTypographyProps;
+
+export const H3 = ({ children, color, textTransform }: H3Props) => {
   return (
     <h3
-      data-cy={dataCy}
       style={{
         textTransform,
         color: colors[color],

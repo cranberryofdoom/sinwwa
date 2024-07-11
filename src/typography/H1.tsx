@@ -1,29 +1,22 @@
 import { colors } from "../styles";
 import styles from "./H1.module.css";
+import { BaseTypographyProps } from "./types";
 
-type H1Props = {
-  children: string | React.ReactNode;
-  color: keyof typeof colors;
-  textTransform?: "uppercase" | "lowercase" | "capitalize";
-  textAlign?: "left" | "center" | "right";
-  /**
-   * Data attribute for cypress testing.
-   */
-  dataCy?: string;
-};
+type H1Props = BaseTypographyProps;
+
 export const H1 = ({
   children,
   color,
-  dataCy,
   textTransform,
   textAlign,
+  textWrap,
 }: H1Props) => {
   return (
     <h1
-      data-cy={dataCy}
       style={{
         textTransform,
         textAlign,
+        textWrap,
         color: colors[color],
       }}
       className={styles.h1}
