@@ -1,18 +1,27 @@
 .root {
+  --tag-border-radius: 71px;
+  --tag-padding: var(--spacing-xxs) var(--spacing-s);
+  --tag-text-color-light: var(--base-white);
+  --tag-text-color-dark: var(--accent-ash-gray);
+  --tag-font-size: 14px;
+  --tag-font-weight: 700;
+  --tag-font-family: var(--roboto);
+  --tag-line-height: 16px;
+
   display: inline-flex;
-  font-family: var(--roboto);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-  padding: var(--spacing-xxs) var(--spacing-s);
-  border-radius: 71px;
+  font-family: var(--tag-font-family);
+  font-size: var(--tag-font-size);
+  font-weight: var(--tag-font-weight);
+  line-height: var(--tag-line-height);
+  padding: var(--tag-padding);
+  border-radius: var(--tag-border-radius);
   text-wrap: nowrap;
 }
 
 .light {
-  color: var(--base-white);
+  color: var(--tag-text-color-light);
 }
 
 .dark {
-  color: var(--accent-ash-gray);
+  color: var(--tag-text-color-dark);
 }
