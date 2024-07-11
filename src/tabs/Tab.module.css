@@ -1,19 +1,32 @@
 .root {
-  font-family: var(--fira-sans);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
+  --tab-font-family: var(--fira-sans);
+  --tab-font-size: 16px;
+  --tab-font-style: normal;
+  --tab-font-weight: 500;
+  --tab-line-height: 24px;
+  --tab-padding-bottom: var(--spacing-xxs);
+  --tab-border-bottom-width: 2px;
+  --tab-color: var(--accent-uniform-grey);
+  --tab-active-color: var(--accent-darker-cyan);
+  --tab-active-border-bottom-color: var(--accent-darker-cyan);
+
+  font-family: var(--tab-font-family);
+  font-size: var(--tab-font-size);
+  font-style: var(--tab-font-style);
+  font-weight: var(--tab-font-weight);
+  line-height: var(--tab-line-height);
+  color: var(--tab-color);
+  padding-bottom: var(--tab-padding-bottom);
+  border-bottom-width: var(--tab-border-bottom-width);
   white-space: nowrap;
   cursor: pointer;
-  color: var(--accent-uniform-grey);
   text-transform: uppercase;
-  padding-bottom: var(--spacing-xxs);
-  border-bottom: 2px solid transparent;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
   display: inline-flex;
 }
 
 .active {
-  color: var(--accent-darker-cyan);
-  border-bottom-color: var(--accent-darker-cyan);
+  color: var(--tab-active-color);
+  border-bottom-color: var(--tab-active-border-bottom-color);
 }

@@ -1,8 +1,11 @@
 .root {
+  --tabs-gap: var(--spacing-l);
+  --tabs-margin-top: var(--spacing-xs);
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: var(--spacing-l);
-  padding-top: var(--spacing-xs);
+  gap: var(--tabs-gap);
+  margin-top: var(--tabs-margin-top);
 }
