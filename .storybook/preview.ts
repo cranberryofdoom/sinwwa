@@ -4,6 +4,7 @@ import "../src/styles/variables.css";
 import "../src/styles/font.css";
 import "../src/styles/base.css";
 import "../src/styles/spacing.css";
+import "../src/styles/colors.css";
 
 const preview: Preview = {
   parameters: {
